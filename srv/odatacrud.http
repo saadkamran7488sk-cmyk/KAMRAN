@@ -1,0 +1,29 @@
+GET http://localhost:4004/odata/v4/library-srv/
+
+###
+GET  http://localhost:4004/odata/v4/library-srv/BooksSet
+
+### 
+GET http://localhost:4004/odata/v4/library-srv/BooksSet
+
+
+###
+POST http://localhost:4004/odata/v4/library-srv/BooksSet
+Content-Type: application/json
+
+###
+PUT  http://localhost:4004/odata/v4/library-srv/BooksSet(2b2dfe99-34d0-43a9-854e-423a4051f40c)
+Content-Type: application/json
+
+
+{
+     "title": "Advanced CAPM",
+  "author": "Neha Verma",
+  "price": 420.00,
+  "publishedDate": "2024-05-01T11:00:00Z",
+
+  "digitalCopy": true
+}
+
+###
+DELETE http://localhost:4004/odata/v4/library-srv/BooksSet(22222222-2222-2222-2222-222222222222)
